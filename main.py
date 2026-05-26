@@ -1,5 +1,7 @@
+
 from src.student_Performance_p1.config.configuration import ConfigurationManager
 from src.student_Performance_p1.components.data_ingestion import DataIngestor
+from src.student_Performance_p1.components.data_validation import DataValidation
 
 
 class DataIngestionPipeline:
@@ -26,4 +28,13 @@ try:
     print(f">>>>> stage {STAGE_NAME} completed <<<<<\n\nx==========x")
 except Exception as e:
     print(e)
+    raise e
+
+
+STAGE_NAME = "Data Validation Stage"
+try:
+    print(f">>>>> stage {STAGE_NAME} started <<<<<")
+    data_validation_config =  DataIngestionPipeline()
+    data_validation_config.initiate_data_ingestion()
+except Exception as e:
     raise e

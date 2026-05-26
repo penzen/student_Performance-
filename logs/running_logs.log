@@ -55,3 +55,264 @@
 [2026-05-21 18:36:28,874: INFO: common: YAML file 'schema.yaml' Loading successfully.]
 [2026-05-21 18:36:28,874: INFO: common: Directories created successfully: ['artifacts']]
 [2026-05-21 18:36:28,875: INFO: common: Directories created successfully: ['artifacts/data_ingestion']]
+[2026-05-26 16:23:48,784: INFO: common: YAML file 'config\config.yaml' Loading successfully.]
+[2026-05-26 16:23:48,789: INFO: common: YAML file 'params.yaml' Loading successfully.]
+[2026-05-26 16:23:48,796: INFO: common: YAML file 'schema.yaml' Loading successfully.]
+[2026-05-26 16:23:48,799: INFO: common: Directories created successfully: ['artifacts']]
+[2026-05-26 16:23:48,803: ERROR: 307718182: Error in data validation process: "'ConfigBox' object has no attribute 'columns'"]
+Traceback (most recent call last):
+  File "box/box.py", line 605, in box.box.Box.__getitem__
+KeyError: 'columns'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 644, in box.box.Box.__getattr__
+  File "box/box.py", line 632, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'columns'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 646, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'columns'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 660, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'columns'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 605, in box.box.Box.__getitem__
+KeyError: 'columns'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 644, in box.box.Box.__getattr__
+  File "box/box.py", line 632, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'columns'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 646, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'columns'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\penze\AppData\Local\Temp\ipykernel_60364\307718182.py", line 3, in <module>
+    data_validation_config = config_manager.get_data_validation_config()
+  File "C:\Users\penze\AppData\Local\Temp\ipykernel_60364\721037481.py", line 18, in get_data_validation_config
+    schema = self.schema.columns
+             ^^^^^^^^^^^^^^^^^^^
+  File "box/config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 660, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'columns'"
+[2026-05-26 16:24:51,555: INFO: common: YAML file 'config\config.yaml' Loading successfully.]
+[2026-05-26 16:24:51,559: INFO: common: YAML file 'params.yaml' Loading successfully.]
+[2026-05-26 16:24:51,564: INFO: common: YAML file 'schema.yaml' Loading successfully.]
+[2026-05-26 16:24:51,568: INFO: common: Directories created successfully: ['artifacts']]
+[2026-05-26 16:24:51,571: ERROR: 307718182: Error in data validation process: "'ConfigBox' object has no attribute 'columns'"]
+Traceback (most recent call last):
+  File "box/box.py", line 605, in box.box.Box.__getitem__
+KeyError: 'columns'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 644, in box.box.Box.__getattr__
+  File "box/box.py", line 632, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'columns'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 646, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'columns'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 660, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'columns'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 605, in box.box.Box.__getitem__
+KeyError: 'columns'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 644, in box.box.Box.__getattr__
+  File "box/box.py", line 632, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'columns'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 646, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'columns'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\penze\AppData\Local\Temp\ipykernel_60364\307718182.py", line 3, in <module>
+    data_validation_config = config_manager.get_data_validation_config()
+  File "C:\Users\penze\AppData\Local\Temp\ipykernel_60364\721037481.py", line 18, in get_data_validation_config
+    schema = self.schema.columns
+             ^^^^^^^^^^^^^^^^^^^
+  File "box/config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 660, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'columns'"
+[2026-05-26 16:34:18,465: INFO: common: YAML file 'config\config.yaml' Loading successfully.]
+[2026-05-26 16:34:18,468: INFO: common: YAML file 'params.yaml' Loading successfully.]
+[2026-05-26 16:34:18,472: INFO: common: YAML file 'schema.yaml' Loading successfully.]
+[2026-05-26 16:34:18,476: INFO: common: Directories created successfully: ['artifacts']]
+[2026-05-26 16:34:18,481: INFO: common: Directories created successfully: ['artifacts/data_validation']]
+[2026-05-26 16:34:18,483: ERROR: 3455998495: Error during column validation: 'DataValidationConfig' object has no attribute 'unzip_data_dir']
+Traceback (most recent call last):
+  File "C:\Users\penze\AppData\Local\Temp\ipykernel_60364\3455998495.py", line 12, in validate_all_columns
+    data = pd.read_csv (self.config.unzip_data_dir)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DataValidationConfig' object has no attribute 'unzip_data_dir'. Did you mean: 'unzipped_data_dir'?
+[2026-05-26 16:34:18,487: ERROR: 307718182: Error in data validation process: 'DataValidationConfig' object has no attribute 'unzip_data_dir']
+Traceback (most recent call last):
+  File "C:\Users\penze\AppData\Local\Temp\ipykernel_60364\307718182.py", line 5, in <module>
+    validation_result = data_validator.validate_all_columns()
+  File "C:\Users\penze\AppData\Local\Temp\ipykernel_60364\3455998495.py", line 25, in validate_all_columns
+    raise e
+  File "C:\Users\penze\AppData\Local\Temp\ipykernel_60364\3455998495.py", line 12, in validate_all_columns
+    data = pd.read_csv (self.config.unzip_data_dir)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DataValidationConfig' object has no attribute 'unzip_data_dir'. Did you mean: 'unzipped_data_dir'?
+[2026-05-26 16:34:21,539: INFO: common: YAML file 'config\config.yaml' Loading successfully.]
+[2026-05-26 16:34:21,543: INFO: common: YAML file 'params.yaml' Loading successfully.]
+[2026-05-26 16:34:21,548: INFO: common: YAML file 'schema.yaml' Loading successfully.]
+[2026-05-26 16:34:21,551: INFO: common: Directories created successfully: ['artifacts']]
+[2026-05-26 16:34:21,554: INFO: common: Directories created successfully: ['artifacts/data_validation']]
+[2026-05-26 16:34:21,556: ERROR: 3455998495: Error during column validation: 'DataValidationConfig' object has no attribute 'unzip_data_dir']
+Traceback (most recent call last):
+  File "C:\Users\penze\AppData\Local\Temp\ipykernel_60364\3455998495.py", line 12, in validate_all_columns
+    data = pd.read_csv (self.config.unzip_data_dir)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DataValidationConfig' object has no attribute 'unzip_data_dir'. Did you mean: 'unzipped_data_dir'?
+[2026-05-26 16:34:21,560: ERROR: 307718182: Error in data validation process: 'DataValidationConfig' object has no attribute 'unzip_data_dir']
+Traceback (most recent call last):
+  File "C:\Users\penze\AppData\Local\Temp\ipykernel_60364\307718182.py", line 5, in <module>
+    validation_result = data_validator.validate_all_columns()
+  File "C:\Users\penze\AppData\Local\Temp\ipykernel_60364\3455998495.py", line 25, in validate_all_columns
+    raise e
+  File "C:\Users\penze\AppData\Local\Temp\ipykernel_60364\3455998495.py", line 12, in validate_all_columns
+    data = pd.read_csv (self.config.unzip_data_dir)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DataValidationConfig' object has no attribute 'unzip_data_dir'. Did you mean: 'unzipped_data_dir'?
+[2026-05-26 16:35:13,543: INFO: common: YAML file 'config\config.yaml' Loading successfully.]
+[2026-05-26 16:35:13,547: INFO: common: YAML file 'params.yaml' Loading successfully.]
+[2026-05-26 16:35:13,550: INFO: common: YAML file 'schema.yaml' Loading successfully.]
+[2026-05-26 16:35:13,553: INFO: common: Directories created successfully: ['artifacts']]
+[2026-05-26 16:35:13,557: INFO: common: Directories created successfully: ['artifacts/data_validation']]
+[2026-05-26 16:35:13,606: ERROR: 457078013: Error during column validation: 'DataValidationConfig' object has no attribute 'STATUS_FILE']
+Traceback (most recent call last):
+  File "C:\Users\penze\AppData\Local\Temp\ipykernel_60364\457078013.py", line 19, in validate_all_columns
+    with open(self.config.STATUS_FILE, 'w') as f:
+              ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DataValidationConfig' object has no attribute 'STATUS_FILE'
+[2026-05-26 16:35:13,610: ERROR: 307718182: Error in data validation process: 'DataValidationConfig' object has no attribute 'STATUS_FILE']
+Traceback (most recent call last):
+  File "C:\Users\penze\AppData\Local\Temp\ipykernel_60364\307718182.py", line 5, in <module>
+    validation_result = data_validator.validate_all_columns()
+  File "C:\Users\penze\AppData\Local\Temp\ipykernel_60364\457078013.py", line 25, in validate_all_columns
+    raise e
+  File "C:\Users\penze\AppData\Local\Temp\ipykernel_60364\457078013.py", line 19, in validate_all_columns
+    with open(self.config.STATUS_FILE, 'w') as f:
+              ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DataValidationConfig' object has no attribute 'STATUS_FILE'
+[2026-05-26 16:40:15,691: INFO: common: YAML file 'config\config.yaml' Loading successfully.]
+[2026-05-26 16:40:15,696: INFO: common: YAML file 'params.yaml' Loading successfully.]
+[2026-05-26 16:40:15,702: INFO: common: YAML file 'schema.yaml' Loading successfully.]
+[2026-05-26 16:40:15,706: INFO: common: Directories created successfully: ['artifacts']]
+[2026-05-26 16:40:15,709: INFO: common: Directories created successfully: ['artifacts/data_validation']]
+[2026-05-26 17:05:15,949: INFO: common: YAML file 'config\config.yaml' Loading successfully.]
+[2026-05-26 17:05:15,953: INFO: common: YAML file 'params.yaml' Loading successfully.]
+[2026-05-26 17:05:15,958: INFO: common: YAML file 'schema.yaml' Loading successfully.]
+[2026-05-26 17:05:15,961: INFO: common: Directories created successfully: ['artifacts']]
+[2026-05-26 17:05:15,965: INFO: common: Directories created successfully: ['artifacts/data_validation']]
+[2026-05-26 17:05:15,967: ERROR: 307718182: Error in data validation process: "'ConfigBox' object has no attribute 'columns'"]
+Traceback (most recent call last):
+  File "box/box.py", line 605, in box.box.Box.__getitem__
+KeyError: 'columns'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 644, in box.box.Box.__getattr__
+  File "box/box.py", line 632, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'columns'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 646, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'columns'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 660, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'columns'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 605, in box.box.Box.__getitem__
+KeyError: 'columns'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 644, in box.box.Box.__getattr__
+  File "box/box.py", line 632, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'columns'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 646, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'columns'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\penze\AppData\Local\Temp\ipykernel_60364\307718182.py", line 3, in <module>
+    data_validation_config = config_manager.get_data_validation_config()
+  File "C:\Users\penze\AppData\Local\Temp\ipykernel_60364\907829487.py", line 28, in get_data_validation_config
+    all_schema=self.schema.columns
+               ^^^^^^^^^^^^^^^^^^^
+  File "box/config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 660, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'columns'"
+[2026-05-26 17:05:34,092: INFO: common: YAML file 'config\config.yaml' Loading successfully.]
+[2026-05-26 17:05:34,095: INFO: common: YAML file 'params.yaml' Loading successfully.]
+[2026-05-26 17:05:34,099: INFO: common: YAML file 'schema.yaml' Loading successfully.]
+[2026-05-26 17:05:34,103: INFO: common: Directories created successfully: ['artifacts']]
+[2026-05-26 17:05:34,107: INFO: common: Directories created successfully: ['artifacts/data_validation']]
+[2026-05-26 17:52:27,509: INFO: common: YAML file 'config\config.yaml' Loading successfully.]
+[2026-05-26 17:52:27,509: INFO: common: YAML file 'params.yaml' Loading successfully.]
+[2026-05-26 17:52:27,510: INFO: common: YAML file 'schema.yaml' Loading successfully.]
+[2026-05-26 17:52:27,510: INFO: common: Directories created successfully: ['artifacts']]
+[2026-05-26 17:52:27,510: INFO: common: Directories created successfully: ['artifacts/data_ingestion']]
+[2026-05-26 17:52:28,562: INFO: common: YAML file 'config\config.yaml' Loading successfully.]
+[2026-05-26 17:52:28,562: INFO: common: YAML file 'params.yaml' Loading successfully.]
+[2026-05-26 17:52:28,563: INFO: common: YAML file 'schema.yaml' Loading successfully.]
+[2026-05-26 17:52:28,564: INFO: common: Directories created successfully: ['artifacts']]
+[2026-05-26 17:52:28,564: INFO: common: Directories created successfully: ['artifacts/data_ingestion']]

@@ -1,6 +1,6 @@
 from src.student_Performance_p1.constants import * 
 from src.student_Performance_p1.utils.common import read_yaml, create_directories
-from src.student_Performance_p1.entity.config_entity import DataIngestConfig
+from src.student_Performance_p1.entity.config_entity import DataIngestConfig, DataValidationConfig
 
 class ConfigurationManager:
     def __init__(self):
@@ -32,3 +32,23 @@ class ConfigurationManager:
         )
 
         return data_ingest_config
+    
+
+
+def get_data_validation_config(self) -> DataValidationConfig:
+        # Access data_validation section from config.yaml
+        config = self.config.data_validation
+        schema = self.schema.COLUMNS
+
+        # Create data validation folder
+        create_directories([config.root_dir])
+
+        # Create DataValidationConfig object
+        data_validation_config = DataValidationConfig(
+            root_dir=config.root_dir,
+            status_file=config.status_file,
+            unzipped_data_dir=config.unzipped_data_dir,
+            all_schema=self.schema.COLUMNS
+        )
+
+        return data_validation_config
