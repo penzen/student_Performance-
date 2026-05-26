@@ -38,3 +38,11 @@ try:
     data_validation_config.initiate_data_ingestion()
 except Exception as e:
     raise e
+
+STAGE_NAME = "Data Transformation Stage"
+try:
+    print(f">>>>> stage {STAGE_NAME} started <<<<<")
+    data_transformation_config =  DataIngestionPipeline()
+    data_transformation_config.initiate_data_ingestion()
+except Exception as e:
+    raise e

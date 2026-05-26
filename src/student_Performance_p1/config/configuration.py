@@ -1,6 +1,6 @@
 from src.student_Performance_p1.constants import * 
 from src.student_Performance_p1.utils.common import read_yaml, create_directories
-from src.student_Performance_p1.entity.config_entity import DataIngestConfig, DataValidationConfig
+from src.student_Performance_p1.entity.config_entity import DataIngestConfig, DataTransformationConfig, DataValidationConfig
 
 class ConfigurationManager:
     def __init__(self):
@@ -52,3 +52,23 @@ def get_data_validation_config(self) -> DataValidationConfig:
         )
 
         return data_validation_config
+
+
+
+def get_data_transformation_config(self) -> DataTransformationConfig:
+        # Access data_transformation section from config.yaml
+        config = self.config.data_transformation
+
+        # Create data transformation folder
+        create_directories([config.root_dir])
+
+        # Create data transformation config object
+        data_transformation_config = DataTransformationConfig(
+            root_dir=config.root_dir,
+            data_path=config.data_path,
+            train_data_path=config.transformed_train_data,
+            test_data_path=config.transformed_test_data
+        )
+
+        return data_transformation_config
+    

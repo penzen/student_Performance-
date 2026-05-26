@@ -316,3 +316,271 @@ box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'columns'"
 [2026-05-26 17:52:28,563: INFO: common: YAML file 'schema.yaml' Loading successfully.]
 [2026-05-26 17:52:28,564: INFO: common: Directories created successfully: ['artifacts']]
 [2026-05-26 17:52:28,564: INFO: common: Directories created successfully: ['artifacts/data_ingestion']]
+[2026-05-26 21:33:18,006: INFO: common: YAML file 'config\config.yaml' Loading successfully.]
+[2026-05-26 21:33:18,008: INFO: common: YAML file 'params.yaml' Loading successfully.]
+[2026-05-26 21:33:18,018: INFO: common: YAML file 'schema.yaml' Loading successfully.]
+[2026-05-26 21:33:18,020: INFO: common: Directories created successfully: ['artifacts']]
+[2026-05-26 21:33:18,021: INFO: common: Directories created successfully: ['artifacts/data_transformation']]
+[2026-05-26 21:33:18,022: ERROR: 675707840: Error in data transformation process: DataIngestionConfig.__init__() missing 1 required positional argument: 'ingested_test_path']
+Traceback (most recent call last):
+  File "C:\Users\penze\AppData\Local\Temp\ipykernel_64688\675707840.py", line 3, in <module>
+    data_transformation_config = config.get_data_transformation_config()
+  File "C:\Users\penze\AppData\Local\Temp\ipykernel_64688\2020535443.py", line 11, in get_data_transformation_config
+    data_transformation_config = DataIngestionConfig( # data transformation config object
+        root_dir=config.root_dir,
+        data_path=config.data_path,
+    )
+TypeError: DataIngestionConfig.__init__() missing 1 required positional argument: 'ingested_test_path'
+[2026-05-26 21:39:45,616: INFO: common: YAML file 'config\config.yaml' Loading successfully.]
+[2026-05-26 21:39:45,620: INFO: common: YAML file 'params.yaml' Loading successfully.]
+[2026-05-26 21:39:45,625: INFO: common: YAML file 'schema.yaml' Loading successfully.]
+[2026-05-26 21:39:45,630: INFO: common: Directories created successfully: ['artifacts']]
+[2026-05-26 21:39:45,635: INFO: common: Directories created successfully: ['artifacts/data_transformation']]
+[2026-05-26 21:39:45,639: ERROR: 675707840: Error in data transformation process: "'ConfigBox' object has no attribute 'train_data_path'"]
+Traceback (most recent call last):
+  File "box/box.py", line 605, in box.box.Box.__getitem__
+KeyError: 'train_data_path'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 644, in box.box.Box.__getattr__
+  File "box/box.py", line 632, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'train_data_path'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 646, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'train_data_path'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 660, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'train_data_path'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 605, in box.box.Box.__getitem__
+KeyError: 'train_data_path'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 644, in box.box.Box.__getattr__
+  File "box/box.py", line 632, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'train_data_path'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 646, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'train_data_path'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\penze\AppData\Local\Temp\ipykernel_64688\675707840.py", line 3, in <module>
+    data_transformation_config = config.get_data_transformation_config()
+  File "C:\Users\penze\AppData\Local\Temp\ipykernel_64688\2424944648.py", line 19, in get_data_transformation_config
+    train_data_path=config.train_data_path,
+                    ^^^^^^^^^^^^^^^^^^^^^^
+  File "box/config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 660, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'train_data_path'"
+[2026-05-26 21:40:15,561: INFO: common: YAML file 'config\config.yaml' Loading successfully.]
+[2026-05-26 21:40:15,562: INFO: common: YAML file 'params.yaml' Loading successfully.]
+[2026-05-26 21:40:15,564: INFO: common: YAML file 'schema.yaml' Loading successfully.]
+[2026-05-26 21:40:15,566: INFO: common: Directories created successfully: ['artifacts']]
+[2026-05-26 21:40:15,568: INFO: common: Directories created successfully: ['artifacts/data_transformation']]
+[2026-05-26 21:40:15,569: ERROR: 1023735533: Error in data transformation process: "'ConfigBox' object has no attribute 'train_data_path'"]
+Traceback (most recent call last):
+  File "box/box.py", line 605, in box.box.Box.__getitem__
+KeyError: 'train_data_path'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 644, in box.box.Box.__getattr__
+  File "box/box.py", line 632, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'train_data_path'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 646, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'train_data_path'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 660, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'train_data_path'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 605, in box.box.Box.__getitem__
+KeyError: 'train_data_path'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 644, in box.box.Box.__getattr__
+  File "box/box.py", line 632, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'train_data_path'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 646, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'train_data_path'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\penze\AppData\Local\Temp\ipykernel_64688\1023735533.py", line 3, in <module>
+    data_transformation_config = config.get_data_transformation_config()
+  File "C:\Users\penze\AppData\Local\Temp\ipykernel_64688\2424944648.py", line 19, in get_data_transformation_config
+    train_data_path=config.train_data_path,
+                    ^^^^^^^^^^^^^^^^^^^^^^
+  File "box/config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 660, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'train_data_path'"
+[2026-05-26 21:40:21,135: INFO: common: YAML file 'config\config.yaml' Loading successfully.]
+[2026-05-26 21:40:21,140: INFO: common: YAML file 'params.yaml' Loading successfully.]
+[2026-05-26 21:40:21,146: INFO: common: YAML file 'schema.yaml' Loading successfully.]
+[2026-05-26 21:40:21,150: INFO: common: Directories created successfully: ['artifacts']]
+[2026-05-26 21:40:21,152: INFO: common: Directories created successfully: ['artifacts/data_transformation']]
+[2026-05-26 21:40:21,155: ERROR: 389818573: Error in data transformation process: "'ConfigBox' object has no attribute 'train_data_path'"]
+Traceback (most recent call last):
+  File "box/box.py", line 605, in box.box.Box.__getitem__
+KeyError: 'train_data_path'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 644, in box.box.Box.__getattr__
+  File "box/box.py", line 632, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'train_data_path'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 646, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'train_data_path'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 660, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'train_data_path'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 605, in box.box.Box.__getitem__
+KeyError: 'train_data_path'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 644, in box.box.Box.__getattr__
+  File "box/box.py", line 632, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'train_data_path'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 646, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'train_data_path'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\penze\AppData\Local\Temp\ipykernel_64688\389818573.py", line 3, in <module>
+    data_transformation_config = config.get_data_transformation_config()
+  File "C:\Users\penze\AppData\Local\Temp\ipykernel_64688\2424944648.py", line 19, in get_data_transformation_config
+    train_data_path=config.train_data_path,
+                    ^^^^^^^^^^^^^^^^^^^^^^
+  File "box/config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 660, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'train_data_path'"
+[2026-05-26 21:42:53,571: INFO: common: YAML file 'config\config.yaml' Loading successfully.]
+[2026-05-26 21:42:53,575: INFO: common: YAML file 'params.yaml' Loading successfully.]
+[2026-05-26 21:42:53,579: INFO: common: YAML file 'schema.yaml' Loading successfully.]
+[2026-05-26 21:42:53,583: INFO: common: Directories created successfully: ['artifacts']]
+[2026-05-26 21:42:53,586: INFO: common: Directories created successfully: ['artifacts/data_transformation']]
+[2026-05-26 21:42:53,588: ERROR: 389818573: Error in data transformation process: DataTransformationConfig.__init__() got an unexpected keyword argument 'train_data_path']
+Traceback (most recent call last):
+  File "C:\Users\penze\AppData\Local\Temp\ipykernel_64688\389818573.py", line 3, in <module>
+    data_transformation_config = config.get_data_transformation_config()
+  File "C:\Users\penze\AppData\Local\Temp\ipykernel_64688\3694526802.py", line 16, in get_data_transformation_config
+    data_transformation_config = DataTransformationConfig(
+        root_dir=config.root_dir,
+    ...<2 lines>...
+        test_data_path=config.transformed_test_data
+    )
+TypeError: DataTransformationConfig.__init__() got an unexpected keyword argument 'train_data_path'
+[2026-05-26 21:47:39,137: INFO: common: YAML file 'config\config.yaml' Loading successfully.]
+[2026-05-26 21:47:39,141: INFO: common: YAML file 'params.yaml' Loading successfully.]
+[2026-05-26 21:47:39,146: INFO: common: YAML file 'schema.yaml' Loading successfully.]
+[2026-05-26 21:47:39,149: INFO: common: Directories created successfully: ['artifacts']]
+[2026-05-26 21:47:39,152: INFO: common: Directories created successfully: ['artifacts/data_transformation']]
+[2026-05-26 21:47:39,155: ERROR: 389818573: Error in data transformation process: DataTransformationConfig.__init__() got an unexpected keyword argument 'train_data_path']
+Traceback (most recent call last):
+  File "C:\Users\penze\AppData\Local\Temp\ipykernel_64688\389818573.py", line 3, in <module>
+    data_transformation_config = config.get_data_transformation_config()
+  File "C:\Users\penze\AppData\Local\Temp\ipykernel_64688\3694526802.py", line 16, in get_data_transformation_config
+    data_transformation_config = DataTransformationConfig(
+        root_dir=config.root_dir,
+    ...<2 lines>...
+        test_data_path=config.transformed_test_data
+    )
+TypeError: DataTransformationConfig.__init__() got an unexpected keyword argument 'train_data_path'
+[2026-05-26 21:47:57,285: INFO: common: YAML file 'config\config.yaml' Loading successfully.]
+[2026-05-26 21:47:57,289: INFO: common: YAML file 'params.yaml' Loading successfully.]
+[2026-05-26 21:47:57,293: INFO: common: YAML file 'schema.yaml' Loading successfully.]
+[2026-05-26 21:47:57,297: INFO: common: Directories created successfully: ['artifacts']]
+[2026-05-26 21:47:57,299: INFO: common: Directories created successfully: ['artifacts/data_transformation']]
+[2026-05-26 21:47:57,301: ERROR: 389818573: Error in data transformation process: DataTransformationConfig.__init__() got an unexpected keyword argument 'train_data_path']
+Traceback (most recent call last):
+  File "C:\Users\penze\AppData\Local\Temp\ipykernel_64688\389818573.py", line 3, in <module>
+    data_transformation_config = config.get_data_transformation_config()
+  File "C:\Users\penze\AppData\Local\Temp\ipykernel_64688\3694526802.py", line 16, in get_data_transformation_config
+    data_transformation_config = DataTransformationConfig(
+        root_dir=config.root_dir,
+    ...<2 lines>...
+        test_data_path=config.transformed_test_data
+    )
+TypeError: DataTransformationConfig.__init__() got an unexpected keyword argument 'train_data_path'
+[2026-05-26 21:51:21,214: INFO: common: YAML file 'config\config.yaml' Loading successfully.]
+[2026-05-26 21:51:21,217: INFO: common: YAML file 'params.yaml' Loading successfully.]
+[2026-05-26 21:51:21,220: INFO: common: YAML file 'schema.yaml' Loading successfully.]
+[2026-05-26 21:51:21,222: INFO: common: Directories created successfully: ['artifacts']]
+[2026-05-26 21:51:21,226: INFO: common: Directories created successfully: ['artifacts/data_transformation']]
+[2026-05-26 21:51:21,228: INFO: 4043773373: Reading the data from the source]
+[2026-05-26 21:51:21,271: INFO: 4043773373: Splitting the data into train and test sets]
+[2026-05-26 21:51:21,286: INFO: 4043773373: Saving the train and test sets to the specified paths]
+[2026-05-26 21:51:21,527: INFO: 4043773373: Train data saved at: artifacts/data_transformation/transformed_train_data.csv]
+[2026-05-26 21:51:21,530: INFO: 4043773373: Test data saved at: artifacts/data_transformation/transformed_test_data.csv]
+[2026-05-26 22:04:03,707: INFO: common: YAML file 'config\config.yaml' Loading successfully.]
+[2026-05-26 22:04:03,708: INFO: common: YAML file 'params.yaml' Loading successfully.]
+[2026-05-26 22:04:03,710: INFO: common: YAML file 'schema.yaml' Loading successfully.]
+[2026-05-26 22:04:03,711: INFO: common: Directories created successfully: ['artifacts']]
+[2026-05-26 22:04:03,712: INFO: common: Directories created successfully: ['artifacts/data_ingestion']]
+[2026-05-26 22:04:04,788: INFO: common: YAML file 'config\config.yaml' Loading successfully.]
+[2026-05-26 22:04:04,790: INFO: common: YAML file 'params.yaml' Loading successfully.]
+[2026-05-26 22:04:04,794: INFO: common: YAML file 'schema.yaml' Loading successfully.]
+[2026-05-26 22:04:04,796: INFO: common: Directories created successfully: ['artifacts']]
+[2026-05-26 22:04:04,798: INFO: common: Directories created successfully: ['artifacts/data_ingestion']]
+[2026-05-26 22:04:06,505: INFO: common: YAML file 'config\config.yaml' Loading successfully.]
+[2026-05-26 22:04:06,507: INFO: common: YAML file 'params.yaml' Loading successfully.]
+[2026-05-26 22:04:06,510: INFO: common: YAML file 'schema.yaml' Loading successfully.]
+[2026-05-26 22:04:06,512: INFO: common: Directories created successfully: ['artifacts']]
+[2026-05-26 22:04:06,513: INFO: common: Directories created successfully: ['artifacts/data_ingestion']]

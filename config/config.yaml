@@ -21,3 +21,10 @@ data_validation:
   root_dir: artifacts/data_validation
   unzipped_data_dir: artifacts/data_ingestion/housing.csv
   status_file: artifacts/data_validation/status.txt
+
+
+data_transformation:
+  root_dir: artifacts/data_transformation
+  data_path: artifacts/data_ingestion/housing.csv
+  transformed_train_data: artifacts/data_transformation/transformed_train_data.csv
+  transformed_test_data: artifacts/data_transformation/transformed_test_data.csv
