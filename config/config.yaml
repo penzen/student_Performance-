@@ -1,0 +1,15 @@
+
+artifacts_root: artifacts
+
+# This would be the configuration for the data ingestion component of our ML pipeline. So this is basically Step 1 of our ML pipeline,
+#which is data ingestion. So we have a root directory where all the artifacts related to data ingestion will be stored. 
+#We have a source URL, which is the URL from where we will download the data. We have a local data file, 
+#which is the path where we will save the downloaded data. And we have an unzip directory, which is the path where 
+#we will unzip the downloaded data if it is in a compressed format.
+
+
+data_ingestion:
+  root_dir: artifacts/data_ingestion
+  source_URL: https://raw.githubusercontent.com/ageron/handson-ml2/master/datasets/housing/housing.tgz
+  local_data_file: artifacts/data_ingestion/housing.tgz
+  unzip_dir: artifacts/data_ingestion

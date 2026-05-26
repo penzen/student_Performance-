@@ -1,0 +1,34 @@
+from src.student_Performance_p1.constants import * 
+from src.student_Performance_p1.utils.common import read_yaml, create_directories
+from src.student_Performance_p1.entity.config_entity import DataIngestConfig
+
+class ConfigurationManager:
+    def __init__(self):
+        # Read config.yaml
+        self.config = read_yaml(CONFIG_FILE_PATH)
+
+        # Read params.yaml
+        self.params = read_yaml(PARAMS_FILE_PATH)
+
+        # Read schema.yaml
+        self.schema = read_yaml(SCHEMA_FILE_PATH)
+
+        # Create main artifacts folder
+        create_directories([self.config.artifacts_root])
+
+    def get_data_ingest_config(self) -> DataIngestConfig:
+        # Access data_ingestion section from config.yaml
+        config = self.config.data_ingestion
+
+        # Create data ingestion folder
+        create_directories([config.root_dir])
+
+        # Create DataIngestConfig object
+        data_ingest_config = DataIngestConfig(
+            root_dir=config.root_dir,
+            source_URL=config.source_URL,
+            local_data_file=config.local_data_file,
+            unzip_dir=config.unzip_dir
+        )
+
+        return data_ingest_config
