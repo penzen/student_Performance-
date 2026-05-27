@@ -584,3 +584,357 @@ TypeError: DataTransformationConfig.__init__() got an unexpected keyword argumen
 [2026-05-26 22:04:06,510: INFO: common: YAML file 'schema.yaml' Loading successfully.]
 [2026-05-26 22:04:06,512: INFO: common: Directories created successfully: ['artifacts']]
 [2026-05-26 22:04:06,513: INFO: common: Directories created successfully: ['artifacts/data_ingestion']]
+[2026-05-27 10:40:41,791: INFO: common: YAML file 'config\config.yaml' Loading successfully.]
+[2026-05-27 10:40:41,793: INFO: common: YAML file 'params.yaml' Loading successfully.]
+[2026-05-27 10:40:41,795: INFO: common: YAML file 'schema.yaml' Loading successfully.]
+[2026-05-27 10:40:41,796: INFO: common: Directories created successfully: ['artifacts']]
+[2026-05-27 10:40:41,798: INFO: common: Directories created successfully: ['artifacts/model_trainer']]
+[2026-05-27 10:40:41,798: ERROR: 2722945823: "'ConfigBox' object has no attribute 'transformed_train_data'"]
+Traceback (most recent call last):
+  File "box/box.py", line 605, in box.box.Box.__getitem__
+KeyError: 'transformed_train_data'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 644, in box.box.Box.__getattr__
+  File "box/box.py", line 632, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'transformed_train_data'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 646, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'transformed_train_data'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 660, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'transformed_train_data'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 605, in box.box.Box.__getitem__
+KeyError: 'transformed_train_data'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 644, in box.box.Box.__getattr__
+  File "box/box.py", line 632, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'transformed_train_data'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 646, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'transformed_train_data'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\penze\AppData\Local\Temp\ipykernel_50256\2722945823.py", line 3, in <module>
+    model_trainer_config = config.get_model_trainer_config()
+  File "C:\Users\penze\AppData\Local\Temp\ipykernel_50256\512265789.py", line 19, in get_model_trainer_config
+    train_data_path=config.transformed_train_data,
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "box/config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 660, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'transformed_train_data'"
+[2026-05-27 10:48:19,014: INFO: common: YAML file 'config\config.yaml' Loading successfully.]
+[2026-05-27 10:48:19,015: INFO: common: YAML file 'params.yaml' Loading successfully.]
+[2026-05-27 10:48:19,016: INFO: common: YAML file 'schema.yaml' Loading successfully.]
+[2026-05-27 10:48:19,017: INFO: common: Directories created successfully: ['artifacts']]
+[2026-05-27 10:48:19,019: INFO: common: Directories created successfully: ['artifacts/model_trainer']]
+[2026-05-27 10:48:19,020: ERROR: 2722945823: "'ConfigBox' object has no attribute 'model_name'"]
+Traceback (most recent call last):
+  File "box/box.py", line 605, in box.box.Box.__getitem__
+KeyError: 'model_name'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 644, in box.box.Box.__getattr__
+  File "box/box.py", line 632, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'model_name'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 646, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'model_name'. Did you mean: 'model_path'?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 660, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'model_name'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 605, in box.box.Box.__getitem__
+KeyError: 'model_name'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 644, in box.box.Box.__getattr__
+  File "box/box.py", line 632, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'model_name'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 646, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'model_name'. Did you mean: 'model_path'?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\penze\AppData\Local\Temp\ipykernel_50256\2722945823.py", line 3, in <module>
+    model_trainer_config = config.get_model_trainer_config()
+  File "C:\Users\penze\AppData\Local\Temp\ipykernel_50256\3661689679.py", line 21, in get_model_trainer_config
+    model_name=config.model_name,
+               ^^^^^^^^^^^^^^^^^
+  File "box/config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 660, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'model_name'". Did you mean: 'model_path'?
+[2026-05-27 10:49:03,789: INFO: common: YAML file 'config\config.yaml' Loading successfully.]
+[2026-05-27 10:49:03,790: INFO: common: YAML file 'params.yaml' Loading successfully.]
+[2026-05-27 10:49:03,791: INFO: common: YAML file 'schema.yaml' Loading successfully.]
+[2026-05-27 10:49:03,792: INFO: common: Directories created successfully: ['artifacts']]
+[2026-05-27 10:49:03,793: INFO: common: Directories created successfully: ['artifacts/model_trainer']]
+[2026-05-27 10:49:03,793: ERROR: 2722945823: "'ConfigBox' object has no attribute 'model_name'"]
+Traceback (most recent call last):
+  File "box/box.py", line 605, in box.box.Box.__getitem__
+KeyError: 'model_name'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 644, in box.box.Box.__getattr__
+  File "box/box.py", line 632, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'model_name'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 646, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'model_name'. Did you mean: 'model_path'?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 660, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'model_name'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 605, in box.box.Box.__getitem__
+KeyError: 'model_name'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 644, in box.box.Box.__getattr__
+  File "box/box.py", line 632, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'model_name'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 646, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'model_name'. Did you mean: 'model_path'?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\penze\AppData\Local\Temp\ipykernel_50256\2722945823.py", line 3, in <module>
+    model_trainer_config = config.get_model_trainer_config()
+  File "C:\Users\penze\AppData\Local\Temp\ipykernel_50256\3661689679.py", line 21, in get_model_trainer_config
+    model_name=config.model_name,
+               ^^^^^^^^^^^^^^^^^
+  File "box/config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 660, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'model_name'". Did you mean: 'model_path'?
+[2026-05-27 10:51:01,864: INFO: common: YAML file 'config\config.yaml' Loading successfully.]
+[2026-05-27 10:51:01,865: INFO: common: YAML file 'params.yaml' Loading successfully.]
+[2026-05-27 10:51:01,867: INFO: common: YAML file 'schema.yaml' Loading successfully.]
+[2026-05-27 10:51:01,869: INFO: common: Directories created successfully: ['artifacts']]
+[2026-05-27 10:51:01,870: INFO: common: Directories created successfully: ['artifacts/model_trainer']]
+[2026-05-27 10:51:01,870: ERROR: 2722945823: "'ConfigBox' object has no attribute 'name'"]
+Traceback (most recent call last):
+  File "box/box.py", line 605, in box.box.Box.__getitem__
+KeyError: 'name'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 644, in box.box.Box.__getattr__
+  File "box/box.py", line 632, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'name'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 646, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'name'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 660, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'name'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 605, in box.box.Box.__getitem__
+KeyError: 'name'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 644, in box.box.Box.__getattr__
+  File "box/box.py", line 632, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'name'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 646, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'name'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\penze\AppData\Local\Temp\ipykernel_50256\2722945823.py", line 3, in <module>
+    model_trainer_config = config.get_model_trainer_config()
+  File "C:\Users\penze\AppData\Local\Temp\ipykernel_50256\3357683547.py", line 24, in get_model_trainer_config
+    target_column=self.schema.name # might need to change this to TARGET_COLUMN from then schnema
+                  ^^^^^^^^^^^^^^^^
+  File "box/config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 660, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'name'"
+[2026-05-27 10:53:05,819: INFO: common: YAML file 'config\config.yaml' Loading successfully.]
+[2026-05-27 10:53:05,820: INFO: common: YAML file 'params.yaml' Loading successfully.]
+[2026-05-27 10:53:05,821: INFO: common: YAML file 'schema.yaml' Loading successfully.]
+[2026-05-27 10:53:05,822: INFO: common: Directories created successfully: ['artifacts']]
+[2026-05-27 10:53:05,823: INFO: common: Directories created successfully: ['artifacts/model_trainer']]
+[2026-05-27 10:53:05,824: INFO: 960190122: Loading training data...]
+[2026-05-27 10:53:05,855: INFO: 960190122: Splitting data into features and target...]
+[2026-05-27 10:53:05,857: INFO: 960190122: Training ElasticNet model...]
+[2026-05-27 10:53:05,862: ERROR: 2722945823: could not convert string to float: 'NEAR OCEAN']
+Traceback (most recent call last):
+  File "C:\Users\penze\AppData\Local\Temp\ipykernel_50256\2722945823.py", line 5, in <module>
+    model_trainer.train_model()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\penze\AppData\Local\Temp\ipykernel_50256\960190122.py", line 19, in train_model
+    model.fit(x_train, y_train)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "c:\Users\penze\Desktop\MLdev_ops\.venv\Lib\site-packages\sklearn\base.py", line 1336, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "c:\Users\penze\Desktop\MLdev_ops\.venv\Lib\site-packages\sklearn\linear_model\_coordinate_descent.py", line 1025, in fit
+    X, y = validate_data(
+           ~~~~~~~~~~~~~^
+        self,
+        ^^^^^
+    ...<9 lines>...
+        y_numeric=True,
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\Users\penze\Desktop\MLdev_ops\.venv\Lib\site-packages\sklearn\utils\validation.py", line 2919, in validate_data
+    X, y = check_X_y(X, y, **check_params)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\penze\Desktop\MLdev_ops\.venv\Lib\site-packages\sklearn\utils\validation.py", line 1314, in check_X_y
+    X = check_array(
+        X,
+    ...<12 lines>...
+        input_name="X",
+    )
+  File "c:\Users\penze\Desktop\MLdev_ops\.venv\Lib\site-packages\sklearn\utils\validation.py", line 1022, in check_array
+    array = _asarray_with_order(array, order=order, dtype=dtype, xp=xp)
+  File "c:\Users\penze\Desktop\MLdev_ops\.venv\Lib\site-packages\sklearn\utils\_array_api.py", line 878, in _asarray_with_order
+    array = numpy.asarray(array, order=order, dtype=dtype)
+  File "c:\Users\penze\Desktop\MLdev_ops\.venv\Lib\site-packages\pandas\core\generic.py", line 2171, in __array__
+    arr = np.asarray(values, dtype=dtype)
+ValueError: could not convert string to float: 'NEAR OCEAN'
+[2026-05-27 10:55:56,012: INFO: common: YAML file 'config\config.yaml' Loading successfully.]
+[2026-05-27 10:55:56,013: INFO: common: YAML file 'params.yaml' Loading successfully.]
+[2026-05-27 10:55:56,015: INFO: common: YAML file 'schema.yaml' Loading successfully.]
+[2026-05-27 10:55:56,016: INFO: common: Directories created successfully: ['artifacts']]
+[2026-05-27 10:55:56,017: INFO: common: Directories created successfully: ['artifacts/model_trainer']]
+[2026-05-27 10:55:56,018: INFO: 1903699351: Loading training data...]
+[2026-05-27 10:55:56,034: INFO: 1903699351: Splitting data into features and target...]
+[2026-05-27 10:55:56,036: INFO: 1903699351: Splitting data into features and target...]
+[2026-05-27 10:55:56,037: INFO: 1903699351: Training ElasticNet model...]
+[2026-05-27 10:55:56,896: INFO: 1903699351: Saving trained model...]
+[2026-05-27 10:55:56,897: ERROR: 2722945823: 'ModelTrainerConfig' object has no attribute 'model_path']
+Traceback (most recent call last):
+  File "C:\Users\penze\AppData\Local\Temp\ipykernel_50256\2722945823.py", line 5, in <module>
+    model_trainer.train_model()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\penze\AppData\Local\Temp\ipykernel_50256\1903699351.py", line 24, in train_model
+    joblib.dump(model, os.path.join(self.config.root_dir, self.config.model_path))
+                                                          ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ModelTrainerConfig' object has no attribute 'model_path'. Did you mean: 'model_name'?
+[2026-05-27 10:56:35,963: INFO: common: YAML file 'config\config.yaml' Loading successfully.]
+[2026-05-27 10:56:35,964: INFO: common: YAML file 'params.yaml' Loading successfully.]
+[2026-05-27 10:56:35,965: INFO: common: YAML file 'schema.yaml' Loading successfully.]
+[2026-05-27 10:56:35,966: INFO: common: Directories created successfully: ['artifacts']]
+[2026-05-27 10:56:35,967: INFO: common: Directories created successfully: ['artifacts/model_trainer']]
+[2026-05-27 10:56:35,968: INFO: 3476202358: Loading training data...]
+[2026-05-27 10:56:35,984: INFO: 3476202358: Splitting data into features and target...]
+[2026-05-27 10:56:35,986: INFO: 3476202358: Splitting data into features and target...]
+[2026-05-27 10:56:35,986: INFO: 3476202358: Training ElasticNet model...]
+[2026-05-27 10:56:36,817: INFO: 3476202358: Saving trained model...]
+[2026-05-27 10:56:36,818: ERROR: 2722945823: [Errno 2] No such file or directory: 'artifacts/model_trainer\\artifacts/model_trainer/model.joblib']
+Traceback (most recent call last):
+  File "C:\Users\penze\AppData\Local\Temp\ipykernel_50256\2722945823.py", line 5, in <module>
+    model_trainer.train_model()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\penze\AppData\Local\Temp\ipykernel_50256\3476202358.py", line 24, in train_model
+    joblib.dump(model, os.path.join(self.config.root_dir, self.config.model_name))
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\penze\Desktop\MLdev_ops\.venv\Lib\site-packages\joblib\numpy_pickle.py", line 599, in dump
+    with open(filename, "wb") as f:
+         ~~~~^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts/model_trainer\\artifacts/model_trainer/model.joblib'
+[2026-05-27 10:57:56,947: INFO: common: YAML file 'config\config.yaml' Loading successfully.]
+[2026-05-27 10:57:56,949: INFO: common: YAML file 'params.yaml' Loading successfully.]
+[2026-05-27 10:57:56,950: INFO: common: YAML file 'schema.yaml' Loading successfully.]
+[2026-05-27 10:57:56,951: INFO: common: Directories created successfully: ['artifacts']]
+[2026-05-27 10:57:56,952: INFO: common: Directories created successfully: ['artifacts/model_trainer']]
+[2026-05-27 10:57:56,953: INFO: 2142772466: Loading training data...]
+[2026-05-27 10:57:56,967: INFO: 2142772466: Splitting data into features and target...]
+[2026-05-27 10:57:56,969: INFO: 2142772466: Splitting data into features and target...]
+[2026-05-27 10:57:56,970: INFO: 2142772466: Training ElasticNet model...]
+[2026-05-27 10:57:57,847: INFO: 2142772466: Saving trained model...]
+[2026-05-27 10:57:57,848: ERROR: 2722945823: 'ModelTrainerConfig' object has no attribute 'model_path']
+Traceback (most recent call last):
+  File "C:\Users\penze\AppData\Local\Temp\ipykernel_50256\2722945823.py", line 5, in <module>
+    model_trainer.train_model()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\penze\AppData\Local\Temp\ipykernel_50256\2142772466.py", line 24, in train_model
+    joblib.dump(model, self.config.model_path)
+                       ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ModelTrainerConfig' object has no attribute 'model_path'. Did you mean: 'model_name'?
+[2026-05-27 10:58:18,289: INFO: common: YAML file 'config\config.yaml' Loading successfully.]
+[2026-05-27 10:58:18,290: INFO: common: YAML file 'params.yaml' Loading successfully.]
+[2026-05-27 10:58:18,292: INFO: common: YAML file 'schema.yaml' Loading successfully.]
+[2026-05-27 10:58:18,292: INFO: common: Directories created successfully: ['artifacts']]
+[2026-05-27 10:58:18,293: INFO: common: Directories created successfully: ['artifacts/model_trainer']]
+[2026-05-27 10:58:18,294: INFO: 3085663722: Loading training data...]
+[2026-05-27 10:58:18,308: INFO: 3085663722: Splitting data into features and target...]
+[2026-05-27 10:58:18,310: INFO: 3085663722: Splitting data into features and target...]
+[2026-05-27 10:58:18,310: INFO: 3085663722: Training ElasticNet model...]
+[2026-05-27 10:58:19,113: INFO: 3085663722: Saving trained model...]
